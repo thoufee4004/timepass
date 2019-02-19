@@ -14,12 +14,16 @@ try:
 	            n=float(raw_input())
 	            key=round(n)
 	            if float(key)==1:
-	              print("fare=",km*10)
+	              fare=km*10
 	            elif float(key)==2:
-	              print("fare=",km*15)
+	              fare=km*15
 	            elif float(key)==3:
-	              print("fare=",km*30)
+	              fare=km*30
 	            else:
 	              print("invalid choice")
 except ValueError:
 	print("false input")
+finally:
+  print("***Invoice of your travel***")
+  print('fare','km',fare,km)
+  print("thank you..")
